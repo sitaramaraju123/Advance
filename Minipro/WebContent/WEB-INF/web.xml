@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Minipro</display-name>
+  <servlet>
+  <servlet-name>signup</servlet-name>
+  <servlet-class>com.pro.Signup</servlet-class>
+  <load-on-startup>0</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>signup</servlet-name>
+  <url-pattern>/Register</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>login</servlet-name>
+  <servlet-class>com.pro.Index</servlet-class>
+  <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>login</servlet-name>
+  <url-pattern>/home</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Home</servlet-name>
+  <servlet-class>com.pro.Homepage</servlet-class>
+  <load-on-startup>2</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Home</servlet-name>
+  <url-pattern>/homepage</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>log</servlet-name>
+  <servlet-class>com.pro.Logout</servlet-class>
+  <load-on-startup>3</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>log</servlet-name>
+  <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>verify</servlet-name>
+  <servlet-class>com.pro.UserVerification</servlet-class>
+  <load-on-startup>4</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>verify</servlet-name>
+  <url-pattern>/verifyaccount</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  <servlet-name>pwd</servlet-name>
+  <servlet-class>com.pro.Pwdreset</servlet-class>
+  <load-on-startup>5</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>pwd</servlet-name>
+  <url-pattern>/pwdset</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>vrpwd</servlet-name>
+  <servlet-class>com.pro.UpdatingPwd</servlet-class>
+  <load-on-startup>6</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>vrpwd</servlet-name>
+  <url-pattern>/reset</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>updb</servlet-name>
+  <servlet-class>com.pro.UpdateDb</servlet-class>
+  <load-on-startup>7</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>updb</servlet-name>
+  <url-pattern>/pwdupdate</url-pattern>
+  </servlet-mapping>
+</web-app>
