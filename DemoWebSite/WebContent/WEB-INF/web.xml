@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>DemoWebSite</display-name>
+  <servlet>
+  <servlet-name>mySrv</servlet-name>
+  <servlet-class>com.demo.MyFirstSrv</servlet-class>
+  <load-on-startup>0</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>mySrv</servlet-name>
+  <url-pattern>/myFirstSrv</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>mylogin</servlet-name>
+  <servlet-class>com.demo.LoginFrom</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>mylogin</servlet-name>
+  <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Register</servlet-name>
+  <servlet-class>com.demo.RegisterDb</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Register</servlet-name>
+  <url-pattern>/signup</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>img</servlet-name>
+  <servlet-class>com.demo.ImageDemo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>img</servlet-name>
+  <url-pattern>/demoimg</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>add</servlet-name>
+  <servlet-class>com.demo.AddServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>add</servlet-name>
+  <url-pattern>/add</url-pattern>
+  </servlet-mapping>
+ 
+   <servlet>
+  <servlet-name>srv</servlet-name>
+  <servlet-class>com.demo.SqServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>srv</servlet-name>
+  <url-pattern>/sq</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>

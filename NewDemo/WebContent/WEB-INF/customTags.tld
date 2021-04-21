@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>  
+<!DOCTYPE taglib  
+        PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN"  
+    "http://java.sun.com/j2ee/dtd/web-jsptaglibrary_1_2.dtd">  
+  
+<taglib>  
+  
+  <tlib-version>1.0</tlib-version>  
+  <jsp-version>1.2</jsp-version>  
+  <short-name>simple</short-name>  
+  
+<tag>  
+<name>date</name>  
+<tag-class> com.demo.tag.DemoTagHandler</tag-class>  
+</tag>  
+
+<tag>  
+<name>calculatar</name>  
+<tag-class> com.demo.tag.CalculatarTag</tag-class>  
+
+<attribute>  
+    <name>ch</name>  
+    <required>true</required>  
+ </attribute>    
+<attribute>  
+    <name>num1</name>  
+    <required>true</required>  
+</attribute> 
+<attribute>  
+    <name>num2</name>  
+    <required>true</required>  
+</attribute> 
+    
+
+</tag>  
+</taglib>  

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>NewDemo</display-name>
+<servlet>
+  <servlet-name>mySrv</servlet-name>
+  <servlet-class>com.web.DemoHttp</servlet-class>
+  <load-on-startup>0</load-on-startup>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>mySrv</servlet-name>
+  <url-pattern>/test.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>image</servlet-name>
+  <servlet-class>com.web.Demoimg</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+ <servlet-name>image</servlet-name>
+  <url-pattern>/img/*</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>sess</servlet-name>
+  <servlet-class>com.web.DemoSession</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>sess</servlet-name>
+  <url-pattern>/session</url-pattern>
+  </servlet-mapping>
+  
+     <servlet>
+    <servlet-name>down</servlet-name>
+  <servlet-class>com.web.Download</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>down</servlet-name>
+  <url-pattern>/download</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>userver</servlet-name>
+  <servlet-class>com.web.UserVerify</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>userver</servlet-name>
+  <url-pattern>/check</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  <servlet-name>code</servlet-name>
+  <servlet-class>com.web.Verifycode</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>code</servlet-name>
+  <url-pattern>/verify</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>view</servlet-name>
+  <servlet-class>com.web.ViewandDownload</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>view</servlet-name>
+  <url-pattern>/viewordownload</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  <servlet-name>file</servlet-name>
+  <servlet-class>com.web.FileUploaded</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>file</servlet-name>
+  <url-pattern>/upload</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>fileview</servlet-name>
+  <servlet-class>com.web.FileView</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>fileview</servlet-name>
+  <url-pattern>/viewfile</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>srvone</servlet-name>
+  <servlet-class>com.web.ServletOne</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>srvone</servlet-name>
+  <url-pattern>/serone</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>srvtwo</servlet-name>
+  <servlet-class>com.web.ServletTwo</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>srvtwo</servlet-name>
+  <url-pattern>/SerTwo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>urlsrv</servlet-name>
+  <servlet-class>com.web.SerOne</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>urlsrv</servlet-name>
+  <url-pattern>/srvone</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  <servlet-name>urlsrvtwo</servlet-name>
+  <servlet-class>com.web.SerTwo</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>urlsrvtwo</servlet-name>
+  <url-pattern>/srvtwo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>ckone</servlet-name>
+  <servlet-class>com.web.DemoCookie</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>ckone</servlet-name>
+  <url-pattern>/cookieone</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>cktwo</servlet-name>
+  <servlet-class>com.web.DemockTwo</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>cktwo</servlet-name>
+  <url-pattern>/cookietwo</url-pattern>
+  </servlet-mapping>
+</web-app>
